@@ -62,14 +62,14 @@
                           "Entity": "Sales"
                         }
                       },
-                      "Property": "Sales Amount"
+                      "Property": "Order Quantity"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(Sales.Sales Amount)",
-              "nativeQueryRef": "Sales Amount"
+              "queryRef": "Sum(Sales.Order Quantity)",
+              "nativeQueryRef": "Order Quantity"
             }
           ]
         }
@@ -86,7 +86,7 @@
                         "Entity": "Sales"
                       }
                     },
-                    "Property": "Sales Amount"
+                    "Property": "Order Quantity"
                   }
                 },
                 "Function": 0
@@ -102,25 +102,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "d3ef01862c6de07bb708",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Sales"
-                  }
-                },
-                "Property": "Sales Amount"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "05a4f6497a5da08113a0",
         "field": {
@@ -148,6 +129,25 @@
           }
         },
         "type": "Categorical"
+      },
+      {
+        "name": "b20baf006890e00d6550",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sales"
+                  }
+                },
+                "Property": "Order Quantity"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
