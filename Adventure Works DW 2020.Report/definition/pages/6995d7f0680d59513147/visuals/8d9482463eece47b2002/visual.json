@@ -32,6 +32,24 @@
             }
           ]
         },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product"
+                    }
+                  },
+                  "Property": "Class"
+                }
+              },
+              "queryRef": "Product.Class",
+              "nativeQueryRef": "Class"
+            }
+          ]
+        },
         "Y": {
           "projections": [
             {
@@ -113,6 +131,20 @@
               }
             },
             "Property": "Category"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f202dabab4901726dd27",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "Class"
           }
         },
         "type": "Categorical"
