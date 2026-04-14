@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "0e7d07b10b28e365b50e",
+  "position": {
+    "x": 385.51477542734551,
+    "y": 289.13608157050913,
+    "z": 3,
+    "height": 398.743223603774,
+    "width": 308.03386467969273,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Product"
+                        }
+                      },
+                      "Hierarchy": "Products"
+                    }
+                  },
+                  "Level": "Product"
+                }
+              },
+              "queryRef": "Product.Products.Product",
+              "nativeQueryRef": "Products Product"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product"
+                    }
+                  },
+                  "Property": "List Price"
+                }
+              },
+              "queryRef": "Product.List Price",
+              "nativeQueryRef": "List Price"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "65c968dd8b61c4ee13c5",
+        "field": {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Product"
+                  }
+                },
+                "Hierarchy": "Products"
+              }
+            },
+            "Level": "Product"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "45493ddf9c63e81e7a72",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product"
+              }
+            },
+            "Property": "List Price"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}
